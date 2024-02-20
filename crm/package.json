@@ -1,0 +1,7 @@
+{
+  "name": "slise-crm",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "zlumer",
+  "license": "GPL-3.0-only"
+}

@@ -1,0 +1,3 @@
+[submodule "telegram-tt"]
+	path = telegram-tt
+	url = ssh://git@github.com:slisexyz/telegram-tt.git
