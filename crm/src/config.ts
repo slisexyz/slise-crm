@@ -7,5 +7,5 @@ export const CONFIG = DEV_LOCALHOST ? {
 } : {
 	TG_FRAME_ORIGIN: "https://slise-telegram.pages.dev",
 	TG_IFRAME_URL: "https://slise-telegram.pages.dev",
-	MAIN_FRAME_ORIGIN: "http://",
+	MAIN_FRAME_ORIGIN: "http://slise-crm.pages.dev",
 }
