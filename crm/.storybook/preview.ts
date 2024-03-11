@@ -1,4 +1,5 @@
 // import { ThemeProvider } from '@emotion/react';
+import "../src/index.css"
 // import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import { Preview, ReactRenderer } from "@storybook/react"
 

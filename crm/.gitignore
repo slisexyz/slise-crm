@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .yarn
+## Panda
+styled-system
+styled-system-studio
