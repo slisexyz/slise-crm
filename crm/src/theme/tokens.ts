@@ -3,7 +3,7 @@ import { aspectRatios } from "./aspect-ratios"
 import { borders } from "./borders"
 import { colors, semanticColors } from "./colors"
 import { animations } from "./keyframes"
-import { shadows } from "./shadows"
+import { semanticShadows, shadows } from "./shadows"
 import { sizes } from "./sizes"
 import { spacing } from "./spacing"
 import { fontSizes, fontWeights } from "./typography"
@@ -28,27 +28,20 @@ export const tokens = defineTokens({
 		slowest: { value: "500ms" },
 	},
 	radii: {
-		xs: { value: "0.125rem" },
-		sm: { value: "0.25rem" },
-		md: { value: "0.375rem" },
-		lg: { value: "0.5rem" },
-		xl: { value: "0.75rem" },
-		"2xl": { value: "1rem" },
-		"3xl": { value: "1.5rem" },
-		full: { value: "9999px" },
+		xs: { value: "2px" },
+		sm: { value: "4px" },
+		md: { value: "8px" },
+		xl: { value: "20px" },
+		pill: { value: "999px" },
+		rounded: { value: "50%" },
 	},
 	fontWeights,
 	fontSizes,
 	shadows,
 	colors,
 	blurs: {
-		sm: { value: "4px" },
-		base: { value: "8px" },
-		md: { value: "12px" },
-		lg: { value: "16px" },
-		xl: { value: "24px" },
-		"2xl": { value: "40px" },
-		"3xl": { value: "64px" },
+		light: { value: "6px" },
+		strong: { value: "20px" },
 	},
 	spacing,
 	sizes,
@@ -57,4 +50,5 @@ export const tokens = defineTokens({
 
 export const semanticTokens = defineSemanticTokens({
 	colors: semanticColors,
+	shadows: semanticShadows,
 })

@@ -246,22 +246,24 @@ export const semanticColors: SemanticTokens["colors"] = {
 		inverted: { value: { _dark: "{colors.gray.20}", _light: "{colors.gray.60}" } },
 		danger: { value: { _dark: "{colors.red.70}", _light: "{colors.gray.20}" } },
 	},
-	boxShadow: {
-		light: {
-			value: "0px 2px 4px 0px {colors.gray.100/4}, 0px 0px 4px 0px {colors.gray.100/8}",
+	accent: {
+		primary: {
+			value: { _light: "{colors.blueAccent.25}", _dark: "{colors.blueAccent.75}" },
 		},
-		strong: {
-			value: {
-				_dark: "2px 4px 16px 0px {colors.gray.100/16}, 0px 2px 4px 0px {colors.gray.100/8}",
-				_light: "2px 4px 16px 0px {colors.gray.100/12}, 0px 2px 4px 0px {colors.gray.100/4}",
-			},
+		secondary: {
+			value: { _light: "{colors.blueAccent.20}", _dark: "{colors.blueAccent.80}" },
 		},
-		underline: { value: "0px 1px 0px 0px {colors.gray.100/32}" },
-		superHeavy: {
-			value: {
-				_dark: "2px 4px 16px 0px {colors.gray.100/12}, 0px 2px 4px 0px {colors.gray.100/4}",
-				_light: "0px 0px 8px 0px {colors.gray.100/16}, 0px 8px 64px -16px {colors.gray.100/48}, 0px 24px 56px -16px {colors.gray.100/8}",
-			},
+		tertiary: {
+			value: { _light: "{colors.blueAccent.15}", _dark: "{colors.blueAccent.85}" },
+		},
+		quaternary: {
+			value: { _light: "{colors.blueAccent.10}", _dark: "{colors.blueAccent.90}" },
+		},
+		accent3570: {
+			value: { _light: "{colors.blueAccent.35}", _dark: "{colors.blueAccent.70}" },
+		},
+		accent4060: {
+			value: { _light: "{colors.blueAccent.40}", _dark: "{colors.blueAccent.60}" },
 		},
 	},
 }

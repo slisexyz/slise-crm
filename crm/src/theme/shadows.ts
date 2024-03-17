@@ -1,9 +1,22 @@
-export const shadows = {
-  xs: { value: '0 1px 2px 0 rgb(0 0 0 / 0.05)' },
-  sm: { value: ['0 1px 3px 0 rgb(0 0 0 / 0.1)', '0 1px 2px -1px rgb(0 0 0 / 0.1)'] },
-  md: { value: ['0 4px 6px -1px rgb(0 0 0 / 0.1)', '0 2px 4px -2px rgb(0 0 0 / 0.1)'] },
-  lg: { value: ['0 10px 15px -3px rgb(0 0 0 / 0.1)', '0 4px 6px -4px rgb(0 0 0 / 0.1)'] },
-  xl: { value: ['0 20px 25px -5px rgb(0 0 0 / 0.1)', '0 8px 10px -6px rgb(0 0 0 / 0.1)'] },
-  '2xl': { value: '0 25px 50px -12px rgb(0 0 0 / 0.25)' },
-  inner: { value: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)' },
+import { SemanticTokens } from "@pandacss/dev"
+
+export const shadows = {}
+
+export const semanticShadows: SemanticTokens["shadows"] = {
+	light: {
+		value: "0px 2px 4px 0px {colors.gray.100/4}, 0px 0px 4px 0px {colors.gray.100/8}",
+	},
+	strong: {
+		value: {
+			_dark: "2px 4px 16px 0px {colors.gray.100/16}, 0px 2px 4px 0px {colors.gray.100/8}",
+			_light: "2px 4px 16px 0px {colors.gray.100/12}, 0px 2px 4px 0px {colors.gray.100/4}",
+		},
+	},
+	underline: { value: "0px 1px 0px 0px {colors.gray.100/32}" },
+	superHeavy: {
+		value: {
+			_dark: "2px 4px 16px 0px {colors.gray.100/12}, 0px 2px 4px 0px {colors.gray.100/4}",
+			_light: "0px 0px 8px 0px {colors.gray.100/16}, 0px 8px 64px -16px {colors.gray.100/48}, 0px 24px 56px -16px {colors.gray.100/8}",
+		},
+	},
 }
