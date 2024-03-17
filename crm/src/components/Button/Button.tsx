@@ -6,13 +6,5 @@ import { styled } from "../../../styled-system/jsx"
 type ButtonProps = {}
 
 export const Button: React.FCC<ButtonProps> = (props) => {
-	return (
-		<div
-			className={css({
-				border: "1px solid red",
-			})}
-		>
-			{props.children}
-		</div>
-	)
+	return <div>{props.children}</div>
 }
