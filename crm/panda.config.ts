@@ -16,4 +16,10 @@ export default defineConfig({
 
 	// The output directory for your css system
 	outdir: "styled-system",
+	conditions:{
+		extend:{
+			dark: '@media (prefers-color-scheme: dark)',
+			light: '@media (prefers-color-scheme: light)',
+		}
+	}
 })
