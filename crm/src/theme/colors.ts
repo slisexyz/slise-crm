@@ -266,4 +266,86 @@ export const semanticColors: SemanticTokens["colors"] = {
 			value: { _light: "{colors.blueAccent.40}", _dark: "{colors.blueAccent.60}" },
 		},
 	},
+	background: {
+		primary: {
+			value: {
+				_dark: "{colors.gray.85}",
+				_light: "{colors.gray.0}",
+			},
+		},
+		secondary: {
+			value: {
+				_dark: "{colors.gray.80}",
+				_light: "{colors.gray.10}",
+			},
+		},
+		tertiary: {
+			value: {
+				_dark: "{colors.gray.75}",
+				_light: "{colors.gray.15}",
+			},
+		},
+		quaternary: {
+			value: {
+				_dark: "{colors.gray.70}",
+				_light: "{colors.gray.20}",
+			},
+		},
+		danger: {
+			value: {
+				_dark: "{colors.gray.80}",
+				_light: "{colors.red.10}",
+			},
+		},
+		transparent: {
+			primary: {
+				value: {
+					_dark: "{colors.gray.85/80}",
+					_light: "{colors.gray.0/80}",
+				},
+			},
+			secondary: {
+				value: {
+					_dark: "{colors.gray.80/80}",
+					_light: "{colors.gray.10/80}",
+				},
+			},
+			strong: {
+				value: {
+					_dark: "{colors.gray.0/14}",
+					_light: "{colors.gray.100/16}",
+				},
+			},
+			medium: {
+				value: {
+					_dark: "{colors.gray.0/10}",
+					_light: "{colors.gray.100/8}",
+				},
+			},
+			light: {
+				value: {
+					_dark: "{colors.gray.0/6}",
+					_light: "{colors.gray.100/4}",
+				},
+			},
+			lighter: {
+				value: {
+					_dark: "{colors.gray.0/3}",
+					_light: "{colors.gray.100/2}",
+				},
+			},
+			danger: {
+				value: "{colors.red/8}",
+			},
+		},
+		overlay: {
+			value: "{colors.gray.80/80}",
+		},
+		radialGradient: {
+			value: `radial-gradient(50% 62.62% at 50% 0%, #505050 0%, {colors.gray.60} 100%)`,
+		},
+		radialGradientHover: {
+			value: `radial-gradient(76.32% 95.59% at 50% 0%, #505050 0%, {colors.gray.60} 100%)`,
+		},
+	},
 }

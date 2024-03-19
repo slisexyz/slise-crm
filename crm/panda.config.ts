@@ -3,6 +3,7 @@ import { slisePreset } from "./src/theme"
 
 export default defineConfig({
 	presets: [slisePreset],
+	validation: "error",
 	// Whether to use css reset
 	preflight: true,
 	// Where to look for your css declarations
@@ -16,10 +17,10 @@ export default defineConfig({
 
 	// The output directory for your css system
 	outdir: "styled-system",
-	conditions:{
-		extend:{
-			dark: '@media (prefers-color-scheme: dark)',
-			light: '@media (prefers-color-scheme: light)',
-		}
-	}
+	conditions: {
+		extend: {
+			dark: "@media (prefers-color-scheme: dark)",
+			light: "@media (prefers-color-scheme: light)",
+		},
+	},
 })
